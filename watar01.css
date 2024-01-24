@@ -130,7 +130,7 @@ div#login-btn-holder {
 /* Color of the thumb when scrolling down */
 ::-webkit-scrollbar-thumb {
     background-color: #330832;
-    background:  url(/images/mic_bg.gif);
+    background:  url(https://www.chabab-jo.com/images/mic_bg.gif);
     border-radius: 6px; /* Rounded corners */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effect */
     box-shadow: inset 0 0 0.417rem #000;
@@ -208,7 +208,7 @@ div#online_users {
 
 
 .label.label-primary {
-background: #3330 url(/images/mic_bg.gif) center bottom/contain repeat padding-box;
+background: #3330 url(https://www.chabab-jo.com/images/mic_bg.gif) center bottom/contain repeat padding-box;
 	background-color: #330832;
 
 }
@@ -1596,7 +1596,7 @@ box-shadow: 0rem 0rem 0.125rem 0.125rem;
             }
 
             .username__wrapper {
-    background: url(/images/mic_bg.gif);
+    background: url(https://www.chabab-jo.com/images/mic_bg.gif);
     background-size: 200px 10px;
                 margin-top: 0.042rem;
                 padding: 0.088rem 0.333rem;
@@ -2200,7 +2200,7 @@ img.state_active {
 }
 
 li.border.border-color.btn-primary.chat__footer__menu__item {
-    background-image: url(/images/mic_bg.gif);
+    background-image: url(https://www.chabab-jo.com/images/mic_bg.gif);
     background-size: cover !important;
 	border-radius: 1px !important;
 }
