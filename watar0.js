@@ -38,9 +38,9 @@ var _0x218c = ['.nav-tabs', 'insertBefore', `<form name="jump">
 \
 <link href="https://raw.githack.com/khaledry/watar0/main/watar00003.css" media="screen" rel="alternate stylesheet" title="Co3" type="text/css" />
 \
-<link href="https://raw.githack.com/khaledry/watar0/main/watar00004.css" media="screen" rel="alternate stylesheet" title="Co4" type="text/css" />
+<link href="https://raw.githack.com/khaledry/watar0/main/watar00001.css" media="screen" rel="alternate stylesheet" title="Co4" type="text/css" />
 \
-<link href="https://raw.githack.com/khaledry/watar0/main/watar00005.css" media="screen" rel="alternate stylesheet" title="Co5" type="text/css" />
+<link href="https://raw.githack.com/khaledry/watar0/main/watar00002.css" media="screen" rel="alternate stylesheet" title="Co5" type="text/css" />
 \
 <style>
 \
