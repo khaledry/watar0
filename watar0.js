@@ -30,7 +30,7 @@ var _0x218c = ['.nav-tabs', 'insertBefore', `<form name="jump">
 \
 
 \
-`, 'https://raw.githack.com/khaledry/watar0/blob/main/color1.js', 'getScript', 'body', `<link rel="stylesheet" type="text/css" href="">
+`, 'https://raw.githubusercontent.com/khaledry/watar0/main/color1.js', 'getScript', 'body', `<link rel="stylesheet" type="text/css" href="">
 \
 <link href="https://raw.githack.com/khaledry/watar0/main/watar00001.css" media="screen" rel="alternate stylesheet" title="Co1" type="text/css" />
 \
