@@ -1,91 +1,88 @@
-var manual_or_random = 'manual';
-var randomsetting = '3 days';
+var _0x218c = ['.nav-tabs', 'insertBefore', `<form name="jump">
+\
+<div class="MyColors">
+\
+					<map id="ColorsMap" name="ColorsMap">
+\
+					<area alt="" coords="275, 0, 298, 25" href="javascript:chooseStyle('none',60)" shape="rect" title="1">
+\
+					<area alt="" coords="244, 0, 266, 25" href="javascript:chooseStyle('Co2',60)" shape="rect" title="2">
+\
+					<area alt="" coords="212, 0, 233, 25" href="javascript:chooseStyle('Co3',60)" shape="rect" title="3">
+\
+					<area alt="" coords="179, 0, 201, 25" href="javascript:chooseStyle('Co4',60)" shape="rect" title="4">
+\
+					<area alt="" coords="148, 0, 170, 25" href="javascript:chooseStyle('Co5',60)" shape="rect" title="5">
+\
+					</map>
+\
+			        <img alt="" height="40" src="https://1.top4top.net/p_1388gqx1c1.gif" width="300" usemap="#ColorsMap"></div>
+\
+</form>
+\
 
-function getCookie(_0x2915x4) {
-    var _0x2915x5 = new RegExp(_0x2915x4 + '=[^;]+', 'i');
-    if (document.cookie.match(_0x2915x5)) {
-        return document.cookie.match(_0x2915x5)[0].split('=')[1]
-    };
-    return null
-}
+\
 
-function setCookie(_0x2915x7, _0x2915x8, _0x2915x9) {
-    var _0x2915xa = new Date();
-    var _0x2915xb = (typeof _0x2915x9 != 'undefined') ? _0x2915xa.setDate(_0x2915xa.getDate() + parseInt(_0x2915x9)) : _0x2915xa.setDate(_0x2915xa.getDate() - 5);
-    document.cookie = _0x2915x7 + '=' + _0x2915x8 + '; expires=' + _0x2915xa.toGMTString() + '; path=/'
-}
+\
 
-function deleteCookie(_0x2915x7) {
-    setCookie(_0x2915x7, 'moot')
-}
+\
 
-function setStylesheet(_0x2915xe, _0x2915xf) {
-    var _0x2915x10, _0x2915x11, _0x2915x12 = [''];
-    for (_0x2915x10 = 0;
-        (_0x2915x11 = document.getElementsByTagName('link')[_0x2915x10]); _0x2915x10++) {
-        if (_0x2915x11.getAttribute('rel').toLowerCase() == 'alternate stylesheet' && _0x2915x11.getAttribute('title')) {
-            _0x2915x11.disabled = true;
-            _0x2915x12.push(_0x2915x11);
-            if (_0x2915x11.getAttribute('title') == _0x2915xe) {
-                _0x2915x11.disabled = false
-            }
-        }
-    };
-    if (typeof _0x2915xf != 'undefined') {
-        var _0x2915x13 = Math.floor(Math.random() * _0x2915x12.length);
-        _0x2915x12[_0x2915x13].disabled = false
-    };
-    return (typeof _0x2915xf != 'undefined' && _0x2915x12[_0x2915x13] != '') ? _0x2915x12[_0x2915x13].getAttribute('title') : ''
-}
+\
 
-function chooseStyle(_0x2915x15, _0x2915x9) {
-    if (document.getElementById) {
-        setStylesheet(_0x2915x15);
-        setCookie('mysheet', _0x2915x15, _0x2915x9)
-    }
-}
+\
+`, 'https://raw.githack.com/khaledry/k/main/color1.js', 'getScript', 'body', `<link rel="stylesheet" type="text/css" href="">
+\
+<link href="https://raw.githack.com/khaledry/watar0/main/watar00001.css" media="screen" rel="alternate stylesheet" title="Co1" type="text/css" />
+\
+<link href="https://raw.githack.com/khaledry/watar0/main/watar00002.css" media="screen" rel="alternate stylesheet" title="Co2" type="text/css" />
+\
+<link href="https://raw.githack.com/khaledry/watar0/main/watar00003.css" media="screen" rel="alternate stylesheet" title="Co3" type="text/css" />
+\
+<link href="https://raw.githack.com/khaledry/watar0/main/watar00004.css" media="screen" rel="alternate stylesheet" title="Co4" type="text/css" />
+\
+<link href="https://raw.githack.com/khaledry/watar0/main/watar00005.css" media="screen" rel="alternate stylesheet" title="Co5" type="text/css" />
+\
+<style>
+\
 
-function indicateSelected(_0x2915x17) {
-    if (selectedtitle != null && (_0x2915x17.type == undefined || _0x2915x17.type == 'select-one')) {
-        var _0x2915x17 = (_0x2915x17.type == 'select-one') ? _0x2915x17.options : _0x2915x17;
-        for (var _0x2915x10 = 0; _0x2915x10 < _0x2915x17.length; _0x2915x10++) {
-            if (_0x2915x17[_0x2915x10].value == selectedtitle) {
-                if (_0x2915x17[_0x2915x10].tagName == 'OPTION') {
-                    _0x2915x17[_0x2915x10].selected = true
-                } else {
-                    _0x2915x17[_0x2915x10].checked = true
-                };
-                break
-            }
-        }
-    }
+\
+
+\
+
+\
+.MyColors {
+\
+    position: absolute;
+\
+    transform: matrix(1, 0, 0, 1, 85, -173);
+\
+    margin-top: 2px;
+\
+    width: 300px;
+\
+    height: 60px;
+\
+    float: left;
+\
+    background: transparent url(https://i.ibb.co/dm6jWSL/color1s.png) no-repeat scroll right top;
+\
+    text-align: left;
+\
 }
-if (manual_or_random == 'manual') {
-    var selectedtitle = getCookie('mysheet');
-    if (document.getElementById && selectedtitle != null) {
-        setStylesheet(selectedtitle)
-    }
-} else {
-    if (manual_or_random == 'random') {
-        if (randomsetting == 'eachtime') {
-            setStylesheet('', 'random')
-        } else {
-            if (randomsetting == 'sessiononly') {
-                if (getCookie('mysheet_s') == null) {
-                    document.cookie = 'mysheet_s=' + setStylesheet('', 'random') + '; path=/'
-                } else {
-                    setStylesheet(getCookie('mysheet_s'))
-                }
-            } else {
-                if (randomsetting.search(/^[1-9]+ days/i) != -1) {
-                    if (getCookie('mysheet_r') == null || parseInt(getCookie('mysheet_r_days')) != parseInt(randomsetting)) {
-                        setCookie('mysheet_r', setStylesheet('', 'random'), parseInt(randomsetting));
-                        setCookie('mysheet_r_days', randomsetting, parseInt(randomsetting))
-                    } else {
-                        setStylesheet(getCookie('mysheet_r'))
-                    }
-                }
-            }
-        }
-    }
-}
+\
+
+\
+
+\
+
+\
+
+\
+
+\
+
+\
+
+\
+</style>`];
+$(`${''}${_0x218c[2]}${''}`)[_0x218c[1]](_0x218c[0]), $[_0x218c[4]](_0x218c[3]), $(`${''}${_0x218c[6]}${''}`)[_0x218c[1]](_0x218c[5])
