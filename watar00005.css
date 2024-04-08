@@ -1,3 +1,6 @@
+#tabs-content {
+    transform: translateY(5px) !important; /* تحريك العناصر 10 بكسل إلى الأسفل */
+}
 #chat__body__users-pane .status_content,
 #online_users .chat_pane__user_item__status {
         -webkit-background-clip: text;
@@ -145,8 +148,14 @@ label#login-form__hidden-label {
 }
 
 .users-count-label p {
-        padding: .042rem
+    padding: .042rem;
+    transform: translateY(-20px) scaleY(1.2); /* تحريك العنصر 50 بكسل إلى الأعلى وتوسيعه للأعلى */
 }
+
+.users-count-label p:hover {
+    transform: translateY(50px) scaleY(0.8); /* تحريك العنصر 50 بكسل إلى الأسفل وتوسيعه للأسفل */
+}
+
 
 button#login-form__submit {
         border-color: #646d7e !important;
@@ -253,10 +262,6 @@ p#youcam-copyrights {
         display: -webkit-box
 }
 
-div#login-btn-holder {
-        visibility: hidden;
-        margin-top: -1.125rem
-}
 
 ::-webkit-scrollbar {
         width: .5rem
@@ -289,9 +294,7 @@ div#online_users .user-container {
         flex-direction: column
 }
 
-#login-btn-holder {
-        margin-bottom: .3rem
-}
+
 
 div#online_users {
         border: .25rem solid #072011;
@@ -385,87 +388,9 @@ li#react-tabs-3 {
         text-align: center
 }
 
-a.login-btn-holder__btn.fa.fa-facebook.btn.btn-primary,
-a.login-btn-holder__btn.fa.fa-music.btn.btn-default,
-a.login-btn-holder__btn.fa.fa-star-half-o.btn.btn-primary,
-a.login-btn-holder__btn.fa.fa-user.btn.btn-default,
-p#youcam-copyrights {
-        text-decoration: dotted;
-        border-bottom: 0 solid #fff !important;
-        border-right: .021rem solid #fff !important;
-        border-left: .021rem solid #fff !important
-}
-
-a.login-btn-holder__btn.fa.fa-facebook.btn.btn-primary,
-a.login-btn-holder__btn.fa.fa-music.btn.btn-default {
-        height: .958rem;
-        width: 24%;
-        background-image: radial-gradient(circle, #072011, #072011, #54715c) !important
-}
-
-img.login-banner__img {
-        max-height: 100%
-}
-
-a.login-btn-holder__btn.fa.fa-facebook.btn.btn-primary {
-        display: inline-block;
-        margin-right: .063rem !important;
-        border-top: .021rem solid #fff !important;
-        border-radius: 2.917rem 2.917rem 0 0;
-        transform: matrix(1, 0, 0, 1, -56, 14);
-        margin: .083rem;
-        padding: .083rem;
-        background-color: #072011 !important
-}
-
-a.login-btn-holder__btn.fa.fa-music.btn.btn-default {
-        color: #fff;
-        display: inline-block;
-        margin-right: .063rem !important;
-        border-radius: 0 0 2.917rem 2.917rem;
-        transform: matrix(1, 0, 0, 1, -152, 132);
-        margin: .083rem;
-        padding: 0;
-        border-top: .021rem solid #072011 !important
-}
-
-a.login-btn-holder__btn.fa.fa-star-half-o.btn.btn-primary,
-a.login-btn-holder__btn.fa.fa-user.btn.btn-default {
-        color: #fff;
-        height: .958rem;
-        padding: .083rem;
-        box-shadow: 0 .083rem .083rem 0 rgb(0 0 0 / 14%), 0 .042rem .208rem 0 rgb(0 0 0 / 12%), 0 -.125rem .042rem -.083rem rgb(0 0 0 / 20%) !important;
-        display: none
-}
-
-a.login-btn-holder__btn.fa.fa-star-half-o.btn.btn-primary,
-p#youcam-copyrights {
-        border-top: .021rem solid #fff !important
-}
-
-a.login-btn-holder__btn.fa.fa-user.btn.btn-default {
-        margin-right: .063rem !important;
-        border-radius: 0 0 2.917rem 2.917rem;
-        transform: matrix(1, 0, 0, 1, -59, 130);
-        width: 24%;
-        margin: .083rem;
-        background: #000
-}
-
-a.login-btn-holder__btn.fa.fa-star-half-o.btn.btn-primary {
-        margin-right: .063rem !important;
-        border-radius: 2.917rem 2.917rem 0 0;
-        transform: matrix(1, 0, 0, 1, 37, 12);
-        width: 23%;
-        margin: .083rem
-}
 
 span#connection-state-on {
         margin-top: -2.333rem !important
-}
-
-div#connection_container {
-        margin-top: -6.667rem
 }
 
 #youcam-copyrights a {
@@ -911,10 +836,7 @@ width: 100%
         border-left: .375rem double #000 !important
 }
 
-#online_users a.border-color.login-btn-holder__btn.fa.fa-star-half-o.btn.btn-primary04::before {
-        text-align: unset;
-        content: "\f12d"
-}
+
 
 حجم الحاله #online_users .chat_pane__user_item {
         line-height: 1.2;
@@ -1498,13 +1420,6 @@ h3.label.label-primary.chat_pane__header__title {
         align-items: stretch
 }
 
-* {
-        font-family: Arial, Helvetica, sans-serif, serif;
-        white-space: normal;
-        font-weight: 700;
-        text-shadow: none !important;
-        font-size: .625rem
-}
 
 *,
 ::after,
@@ -1565,7 +1480,7 @@ marquee.marquee {
         margin-right: -10.042rem;
         padding: .208rem 0 0;
         line-height: 6.417rem;
-        margin-top: 3.6rem;
+        margin-top: 4.6rem;
         width: 100%;
         position: absolute;
         background-image: radial-gradient(circle, #ff0404, #000, #ffffff) !important;
@@ -1576,8 +1491,6 @@ marquee.marquee,
 p#youcam-copyrights {
         height: 1.833rem;
         box-shadow: 0 0 2.083rem 0 #072011;
-}
+    transform: translateY(20px); /* تحريك العناصر 20 بكسل إلى الأسفل */
 
-.react-tabs {
-        margin-block: -1.3rem;
 }
