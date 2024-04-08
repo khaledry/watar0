@@ -339,11 +339,6 @@ a.nav-link,a.nav-link.active {
     color: #fff
 }
 
-marquee.marquee,p#youcam-copyrights {
-    height: .833rem;
-    box-shadow: 0 0 .083rem 0 rgb(0 0 0 / 43%)
-}
-
 input#login-form__password,input#register-form__password {
     height: 1.167rem;
     padding: 0!important;
